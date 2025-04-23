@@ -1,5 +1,27 @@
 # gensyn m4配置
 
+ 
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip3 install -r requirements.txt
+
+解决.bashrc报错
+
+touch /Users/liangjiang/.bashrc
+
+export PATH="$PATH:/usr/local/bin"
+
+export PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 & ./run_rl_swarm.sh
+
+.venv\lib\python3.12\site-packages\hivemind\p2p\p2p_daemon.py  设置超时参数为30s,可以先不干
+
+https://gensyn-node.vercel.app/ 查询贡献是否被记录
+
+配置文件路径：hivemind_exp/configs/mac
+
 ```
 model_name_or_path: Gensyn/Qwen2.5-0.5B-Instruct  
 model_revision: main  
