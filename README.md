@@ -1,6 +1,6 @@
-# gensyn
+# gensyn m4配置
 
-
+```
 model_name_or_path: Gensyn/Qwen2.5-0.5B-Instruct  
 model_revision: main  
 torch_dtype: float32  
@@ -39,3 +39,5 @@ seed: 42
   
 max_rounds: 10000  
 max_grad_norm: 0.5
+```
+
